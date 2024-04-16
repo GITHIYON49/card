@@ -2,14 +2,13 @@ import React from 'react'
 import './style.scss'
 
 function Card({data}) {
-    const{name,jobTittle,jobDescription,button}=data;
+    const{name,jobTittle,jobDescription,button,profilePic}=data;
   return <>
-<section className='card-field'>
     <div className='card-field__container'>
 
         <div className='card-field__container__uppercase'>
             <div className='card-field__container__uppercase__image'>
-                <img className='card-field__container__uppercase__image__pic' src='https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg' alt='profic-pic'/>
+                <img className='card-field__container__uppercase__image__pic' src={profilePic} alt='profic-pic'/>
             </div>
         
         </div>
@@ -28,7 +27,6 @@ function Card({data}) {
 
     </div>
 
-</section>
   
 
   </>

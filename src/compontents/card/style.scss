@@ -1,14 +1,12 @@
-@import '/src/sass/colors';
-@import '/src/sass/variable';
+@import '/src/scss/colors';
+@import '/src/scss/variable';
 
-.card-field{ 
-    @include displayflex();
-    &__container{
-        height: 500px;
-        width: 300px;
+.card-field__container{
+        height: 550px;
+        width: 350px;
        background-color: $white;
        border-radius:8px;
-       @include displayflex();
+       @include displayflex(center,flex-start);
        flex-direction: column;
        overflow: hidden;
 
@@ -49,4 +47,12 @@
        }
     }
 
-}
+    @media(max-width:567px){
+        .card-field__container{
+            width:90%;
+            height:600px;
+            &__uppercase{
+                height:30%;
+            }
+        }
+    }

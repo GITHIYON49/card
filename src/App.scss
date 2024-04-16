@@ -1,3 +1,6 @@
+@import '/src/scss/colors';
+@import '/src/scss/variable';
+
 body{
     padding: 0;
     margin: 0;
@@ -7,4 +10,11 @@ body{
 img{
     width: 100%;
     height: 100%;
+}
+
+.card{
+    @include displayflex(center,space-around);
+    flex-wrap: wrap;
+    gap: 15px;
+
 }

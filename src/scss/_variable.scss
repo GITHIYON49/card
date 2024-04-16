@@ -3,9 +3,3 @@
     align-items:$align;
     justify-content: $justify;
 }
-
-@mixin displaygrid($align:center,$justify:center){
-    display: grid;
-    align-items: $align;
-    justify-items: $justify;
-}

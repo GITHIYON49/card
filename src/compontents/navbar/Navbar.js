@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.scss';
 
-function Header() {
+function Navbar() {
   return <>
   <header className='navbar'>
    <h1 className='navbar__task-name'>card task</h1>
@@ -9,4 +9,4 @@ function Header() {
   </>
 }
 
-export default Header
+export default Navbar;
