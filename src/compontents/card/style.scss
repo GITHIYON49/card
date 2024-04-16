@@ -1,0 +1,52 @@
+@import '/src/sass/colors';
+@import '/src/sass/variable';
+
+.card-field{ 
+    @include displayflex();
+    &__container{
+        height: 500px;
+        width: 300px;
+       background-color: $white;
+       border-radius:8px;
+       @include displayflex();
+       flex-direction: column;
+       overflow: hidden;
+
+       &__uppercase{
+        background-color: $primary;
+        height:40%;
+        width: 100%;
+        position: relative;
+        &__image{
+            height: 120px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            &__pic{
+                object-fit: cover
+            }
+        }
+
+       }
+       &__lowercase{
+        @include displayflex();
+        flex-direction: column;
+        text-align: center;
+        padding: 16px;
+        height: 60%;
+        margin-top: 15px;
+        &__btn{
+            padding: 10px 20px;
+            background-color: $primary;
+            color:$white;
+            font-size: 16px;
+            border-radius:5px;
+        }
+       }
+    }
+
+}

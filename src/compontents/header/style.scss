@@ -1,0 +1,18 @@
+@import '/src/sass/colors';
+@import '/src/sass/variable';
+
+
+.navbar{
+    height: 100px;
+    background-color:$black;
+    color: $white;
+    text-transform: uppercase;
+    @include displayflex(center,flex-start);
+    margin-bottom: 30px;
+
+    &__task-name{
+        margin: 0;
+        margin-left: 30px;
+    }
+
+}
